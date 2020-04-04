@@ -19,6 +19,8 @@ int nTail;
 enum eDirecton { STOP = 0, LEFT, RIGHT, UP, DOWN};
 eDirecton dir;
 
+
+//Setup Function
 void Setup()
 {
     gameOver = false;
@@ -87,6 +89,8 @@ void Draw()
     cout << "Score:" << score << endl;
 
 }
+
+//Keyboard input for moving the snake
 void Input()
 {
     if (_kbhit())
